@@ -25,13 +25,18 @@ Server backend untuk game Tic Tac Toe Multiplayer berbasis real-time. Dibuat den
    ```
 3. Instal dependensi:
    ```bash
-   pip install flask flask-socketio flask-cors eventlet
+   pip install flask flask-socketio flask-cors eventlet gunicorn
    ```
 4. Jalankan server:
    ```bash
    python app.py
    ```
    Server akan berjalan di `http://localhost:5000`.
+
+## 🚀 Deployment (Railway)
+1. Hubungkan repository ini ke [Railway.app](https://railway.app/).
+2. Railway akan mendeteksi `Procfile` secara otomatis.
+3. Pastikan port sudah di-setting otomatis oleh Railway.
 
 ## 🔗 Repository Terkait
 - **Frontend**: [tic-tac-toe-gabutan](https://github.com/Raflyromeo/tic-tac-toe-gabutan)

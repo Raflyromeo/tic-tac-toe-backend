@@ -8,6 +8,9 @@ CORS(app)
 socketio = SocketIO(app, cors_allowed_origins="*", async_mode='eventlet')
 
 rooms = {}
+@app.route('/')
+def home():
+    return "Server Tic Tac Toe Running..."
 
 @socketio.on('connect')
 def handle_connect():

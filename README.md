@@ -3,10 +3,11 @@
 Server backend untuk game Tic Tac Toe Multiplayer berbasis real-time. Dibuat dengan Flask dan Socket.IO untuk mendukung sinkronisasi gerakan antar pemain secara instan.
 
 ## 🚀 Teknologi
-- **Python 3.x**
-- **Flask** (Web Framework)
-- **Flask-SocketIO** (Real-time Communication)
-- **Eventlet** (Networking Library)
+- **Python 3.10+**
+- **Flask 3.x** (Web Framework)
+- **Flask-SocketIO 5.x** (Real-time Communication)
+- **Flask-CORS** (Cross-Origin Resource Sharing)
+- **Eventlet 0.36+** (Networking Engine)
 
 ## 🛠️ Fitur
 - **Room Management**: Membuat dan bergabung ke ruangan menggunakan kode unik.

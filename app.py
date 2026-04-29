@@ -1,3 +1,4 @@
+import os
 from flask import Flask, request
 from flask_socketio import SocketIO, emit, join_room, leave_room
 from flask_cors import CORS
@@ -87,4 +88,5 @@ def handle_disconnect():
             emit('player_left', {'id': request.sid}, room=room)
 
 if __name__ == '__main__':
-    socketio.run(app, debug=True, port=5000)
+    port = int(os.environ.get("PORT", 5000))
+    socketio.run(app, debug=True, host='0.0.0.0', port=port)
